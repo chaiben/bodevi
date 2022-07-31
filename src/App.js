@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import logo from "./assets/logobodevi.png";
+import instagram from "./assets/instagram.png";
+import twitter from "./assets/twitter.png";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <main>
+        <header><img className="logo" src={logo} alt='Bodevi logo' /></header>
+        <p>Hola!</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          La nostra botiga online romandrà tancada. Si teniu alguna consulta o
+          voleu que us ajudem a organitzar un tast de vins podeu contactar amb
+          nosaltres a través de les xarxes socials i a l’e-mail:&nbsp;
+          <a href="mailto:hello@bodevi.com">hello@bodevi.com</a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>Salutacions, </p>
+        <p>Bodevi</p>
+        <footer>
+          <a href="https://www.instagram.com/bodevi.bcn/"><img className="socialIcons" src={instagram} alt="Instagram" ></img></a>
+          <a href="https://twitter.com/bodevibcn"><img className="socialIcons" src={twitter} alt="Twitter" ></img></a>
+        </footer>
+      </main>
     </div>
   );
 }
